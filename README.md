@@ -1,9 +1,21 @@
-# React TypeScript Starter Pack
+# **Todo app**
 
-To use this template click `Use this template`
+## Todo app that allows you to create a list of tasks
 
-### Available Scripts
+**[DEMO LINK](https://barantarasnew.github.io/todo-app/)**
 
-`Deploy` - available to deploy your application to gh-pages
+## **Technologies**
++ React
++ TypeScript
++ HTML5
++ CSS
++ Locale storage
++ React router
++ React transition group
++ classnames
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+___
+
+## **Features**
+  + Stored in locale storage
+  + Animated
