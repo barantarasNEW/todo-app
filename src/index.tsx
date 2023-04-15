@@ -1,11 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.scss';
+import { createRoot } from 'react-dom/client';
+import { HashRouter } from 'react-router-dom';
+
+import './styles/index.css';
+import './styles/todo-list.css';
+import './styles/filters.css';
+import './styles/todoTransition.css';
+
 import { App } from './App';
 
-ReactDOM.render(
-  <React.StrictMode>
+const root = createRoot(document.getElementById('root') as HTMLElement);
+
+root.render(
+  <HashRouter>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
+  </HashRouter>,
 );
