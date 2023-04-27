@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import { useLocation } from 'react-router-dom';
 import React, {
   useMemo,
@@ -81,16 +82,15 @@ export const App: React.FC = () => {
       {!!todos.length && (
         <>
           <section className="main">
-            <label htmlFor="toggle-all">
-              <input
-                type="checkbox"
-                id="toggle-all"
-                className="toggle-all"
-                data-cy="toggleAll"
-                checked={isAllCompleted}
-                onChange={changeAllTodo}
-              />
-            </label>
+            <input
+              type="checkbox"
+              id="toggle-all"
+              className="toggle-all"
+              data-cy="toggleAll"
+              checked={isAllCompleted}
+              onChange={changeAllTodo}
+            />
+            <label htmlFor="toggle-all">Mark all as complete</label>
 
             <Context.Provider value={{ updateTodo, removeTodo }}>
               <TodoList todos={visibleTodos} />
